@@ -1,0 +1,41 @@
+<!--Universal Styles-->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+<!--Start of Main Flexbox-->
+      <div class="flexbox">
+<!--Collection Menu Bar-->
+        <div class="collection-container">
+            <h1 id="collectionHeader" class="collect-header">Collection</h1>
+              <div id="collectionContent" class="collection-content">
+                  <button onclick="gameDisplay();" id="vGameBtn" class="collection-btn">Video Games</button>
+            </div>
+<!--Collection Down Menu Bar for Video Game Container-->
+            <div id="vGameCollectionContent" class="game-collection-content">
+              <div class="collection-flex">
+                <button onclick="videoDisplay();" id="backButton" class="game-collection-btn">Back</button>
+                <button onclick="collection.videoGames.theWitcherOne.getWitcher();" id="vcollectionButton" class="game-collection-btn">The Witcher 3</button>
+              </div>
+          </div>
+          </div>
+<!--Video Game Container-->
+        <div id="videoGameCollection" class="vgame-div">
+          <div id="witcher-container" class="gcontainer">
+            <p id="witcher-content"></p>
+          </div>
+          <div id="game-container" class="gcontainer">
+            
+          </div>
+          <div id="game-container" class="gcontainer">
+            
+          </div>
+        </div>
+       </div>
+<!--Javascript-->
+        <script src="script.js"></script>
+    </body>
+</html>

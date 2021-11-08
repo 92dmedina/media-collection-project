@@ -1,0 +1,66 @@
+/* Collection Buttons */
+.collection-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin: 5px 0px 5px 15px;
+}
+/* The Container for the Media Collections */
+
+/* Collection Content */
+.collection-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 0px auto;
+}
+/* Main Flexbox Code */
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+/* Video Game Grid Code and Content Code */
+.vgame-div {
+  display: none;
+  background-color: #04AA6D;
+  width: 500px;
+  height: 500px;
+  padding: 10px 10px;
+  grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+  grid-auto-flow: row;
+}
+.gcontainer {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: 25px 25px;
+  word-wrap: normal;
+}
+
+.collection-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-collection-content {
+  display: none;
+    background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 0px auto;
+}
+/* Video Game Button Code */
+.game-collection-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-right: 15px;
+}
