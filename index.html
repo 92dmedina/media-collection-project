@@ -10,22 +10,25 @@
       <div class="flexbox">
 <!--Collection Menu Bar-->
         <div class="collection-container">
-            <h1 id="collectionHeader" class="collect-header">Collection</h1>
+            <h1 id="collectionHeader" class="collection-header">Media Collection</h1>
               <div id="collectionContent" class="collection-content">
                   <button onclick="gameDisplay();" id="vGameBtn" class="collection-btn">Video Games</button>
+                  <button" id="mGameBtn" class="collection-btn">Movies</button>
             </div>
-<!--Collection Down Menu Bar for Video Game Container-->
+<!--Collection Menu Bar for Video Game Container-->
             <div id="vGameCollectionContent" class="game-collection-content">
-              <div class="collection-flex">
+              <div class="vcollection-flex">
+                <h1 id="vCollectionHeader" class="collection-header">Choose a game!</h1>
                 <button onclick="videoDisplay();" id="backButton" class="game-collection-btn">Back</button>
-                <button onclick="collection.videoGames.theWitcherOne.getWitcher();" id="vcollectionButton" class="game-collection-btn">The Witcher 3</button>
+                <button onclick="collection.videoGames.theWitcherOne.getWitcher();" id="vcollectionButton" class="game-collection-btn">The Witcher One</button>
+                <button id="vCollectionButton" class="game-collection-btn">The Witcher Two</button>
               </div>
-          </div>
+            </div>
           </div>
 <!--Video Game Container-->
         <div id="videoGameCollection" class="vgame-div">
           <div id="witcher-container" class="gcontainer">
-            <p id="witcher-content"></p>
+            <p id="witcher-content" class="witcher-info"></p>
           </div>
           <div id="game-container" class="gcontainer">
             

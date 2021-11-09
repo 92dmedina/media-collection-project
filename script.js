@@ -4,8 +4,8 @@ const gameDisplay = () => {
     let b = document.getElementById("collectionHeader")
     let c = document.getElementById("collectionContent");
     let d = document.getElementById("vGameCollectionContent");
-            a.style.display = "grid";
-            b.innerText = "Choose a game!";
+            a.style.display = "flex";
+            b.style.display = "none";
             c.style.display = "none";
             d.style.display = "block";
 }
@@ -15,8 +15,8 @@ const videoDisplay = () => {
     let c = document.getElementById("collectionContent");
     let d = document.getElementById("vGameCollectionContent");
             a.style.display = "none";
-            b.innerText = "Collection";
-            c.style.display = "block";
+            b.style.display = "block";
+            c.style.display = "flex";
             d.style.display = "none";
 }
 //Media Collection of Objects
@@ -25,8 +25,8 @@ let collection = {
         videoGames : {
 
             theWitcherOne: {
-                completed: true,
-                genre: ['third person rpg',' open world',' adventure'],
+                completed: 'No.',
+                genre: ['third person rpg',' open world',' adventure.'],
                 getWitcher () {
                     let witcherArray = [];
                     let a = document.getElementById("witcher-content");
